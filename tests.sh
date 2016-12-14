@@ -7,6 +7,8 @@ set -e
 
 assert "main" "hello world: "
 assert "main 123" "hello world: 123"
+assert_raises "main"
+assert_raises "main false" 1
 
 assert_end tests
 
